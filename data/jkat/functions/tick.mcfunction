@@ -1,7 +1,6 @@
 ## 每刻执行
 execute as @a[gamemode=!spectator] at @s run function jkat:player
 execute at @e[tag=jkat_marker_portal] run data modify block ~ ~ ~ Age set value 222
-execute at @e[limit=1,tag=jkat_marker_tp] run function jkat:op/point_block
 
 # 设置
 execute unless score #num_home jkat.mem matches 0..5 run scoreboard players set #num_home jkat.mem 5

@@ -9,7 +9,5 @@ execute at @e[limit=1,tag=jkat_marker_tp] run setblock ~ ~ ~ end_gateway{Age: 22
 execute at @e[limit=1,tag=jkat_marker_tp] store result block ~ ~ ~ ExitPortal.X int 1 run scoreboard players get @s jkat.last.x1
 execute at @e[limit=1,tag=jkat_marker_tp] store result block ~ ~ ~ ExitPortal.Y int 1 run scoreboard players get @s jkat.last.y1
 execute at @e[limit=1,tag=jkat_marker_tp] store result block ~ ~ ~ ExitPortal.Z int 1 run scoreboard players get @s jkat.last.z1
-tp @s @e[limit=1,tag=jkat_marker_tp]
-effect give @s resistance 1 4 true
-
+function jkat:tp_point
 tellraw @s {"text": "已返回到上一地点！","color": "gold"}

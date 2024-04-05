@@ -24,6 +24,6 @@ execute as @s[scores={jkat.warp.num=9}] unless score #warp jkat.warp.x.9 matches
 execute as @s[scores={jkat.warp.num=10}] unless score #warp jkat.warp.x.10 matches 0.. run scoreboard players remove #warp jkat.mem 1
 execute as @s[scores={jkat.warp.num=10}] unless score #warp jkat.warp.x.10 matches ..0 run scoreboard players remove #warp jkat.mem 1
 
-execute as @s[scores={jkat.mode=0}] run function jkat:trigger/run/warp/no
-execute if score #warp jkat.mem matches -2 run function jkat:trigger/run/warp/no
+execute as @s[scores={jkat.mode=0}] run function jkat:trigger/run/warp/fail
+execute if score #warp jkat.mem matches -2 run function jkat:trigger/run/warp/fail
 execute if score #warp jkat.mem matches -1 run function jkat:trigger/run/warp/exist

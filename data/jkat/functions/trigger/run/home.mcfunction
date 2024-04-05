@@ -8,6 +8,5 @@ execute as @s[scores={jkat.home.num=2}] run function jkat:trigger/run/home/2
 execute as @s[scores={jkat.home.num=3}] run function jkat:trigger/run/home/3
 execute as @s[scores={jkat.home.num=4}] run function jkat:trigger/run/home/4
 execute as @s[scores={jkat.home.num=5}] run function jkat:trigger/run/home/5
-tp @s @e[limit=1,tag=jkat_marker_tp]
-effect give @s resistance 1 4 true
+function jkat:tp_point
 tellraw @s [{"text": "已回到家","color": "gold"},{"score":{"name": "@s","objective": "jkat.home.num"},"color": "yellow"},"！"]

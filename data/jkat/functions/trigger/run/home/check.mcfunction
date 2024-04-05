@@ -16,4 +16,4 @@ execute if score #num_home jkat.mem matches 5.. as @s[scores={jkat.home.num=5}] 
 
 execute as @s[scores={jkat.home.flag=0}] run function jkat:trigger/run/home/banned
 execute as @s[scores={jkat.home.flag=-1}] run function jkat:trigger/run/home/exist
-execute as @s[scores={jkat.home.flag=-2}] run function jkat:trigger/run/home/no
+execute as @s[scores={jkat.home.flag=-2}] run function jkat:trigger/run/home/fail
