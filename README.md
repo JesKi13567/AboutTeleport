@@ -15,3 +15,19 @@
 - 垂直和水平电梯。
 
 对于管理员，可自由配置以上所有条目！
+
+**获得指南**
+
+管理员：/function jkat:op/guide
+
+玩家：/trigger jkat.guide
+
+**感谢**
+
+感谢以下参与数据包测试的玩家：
+
+Beiyao, Wicked_Ritual, KSXG
+
+项目地址：
+
+https://github.com/JesKi13567/AboutTeleport

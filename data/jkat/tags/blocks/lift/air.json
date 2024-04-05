@@ -118,6 +118,9 @@
         "rail",
         "powered_rail",
         "detector_rail",
-        "activator_rail"
+        "activator_rail",
+
+        "light",
+        "structure_void"
     ]
 }
