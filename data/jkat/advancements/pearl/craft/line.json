@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "jkat": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "recipe_id": "jkat:pearl/line"
+            }
+        }
+    },
+    "rewards": {
+        "function": "jkat:pearl/craft/line"
+    }
+}

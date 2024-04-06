@@ -1,0 +1,1 @@
+give @s ender_eye{jkat: ["pearl", "line"], HideFlags: 63, Enchantments: [{id: "unbreaking", lvl: 1}], display: {Name: '{"text": "折跃珍珠","color": "yellow","italic": false}', Lore: ['{"text": "直接折跃到“目”的地！","color": "gray","italic": false}']}}

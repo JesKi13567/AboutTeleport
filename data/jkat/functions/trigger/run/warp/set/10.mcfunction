@@ -1,3 +1,6 @@
+execute if dimension overworld run scoreboard players set #warp jkat.warp.d.10 0
+execute if dimension the_nether run scoreboard players set #warp jkat.warp.d.10 -1
+execute if dimension the_end run scoreboard players set #warp jkat.warp.d.10 1
 execute store result score #warp jkat.warp.x.10 run data get entity @s Pos[0] 1
 execute store result score #warp jkat.warp.y.10 run data get entity @s Pos[1] 1
 execute store result score #warp jkat.warp.z.10 run data get entity @s Pos[2] 1

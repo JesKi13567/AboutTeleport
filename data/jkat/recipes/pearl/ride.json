@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:saddle"
+        },
+        {
+            "item": "minecraft:ender_pearl"
+        },
+        {
+            "item": "minecraft:ender_pearl"
+        },
+        {
+            "item": "minecraft:ender_pearl"
+        }
+    ],
+    "result": {
+        "item": "minecraft:knowledge_book"
+    }
+}

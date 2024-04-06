@@ -1,9 +1,9 @@
 ## 电梯间
-# up & down，中间隔 ud - 3 格
-scoreboard players operation #lift_ud jkat.mem = #num_lift_ud jkat.mem
-execute unless score #ban_lift_ud jkat.mem matches 1 if block ~ ~-1 ~ #jkat:lift/ud as @s[scores={jkat.check.jump=1..}] run function jkat:lift/ud_jump
-execute unless score #ban_lift_ud jkat.mem matches 1 if block ~ ~-1 ~ #jkat:lift/ud as @s[scores={jkat.check.sneak=1..}] run function jkat:lift/ud_sneak
+# vertical，中间隔 v - 3 格
+scoreboard players operation #lift_v jkat.mem = #num_lift_v jkat.mem
+execute unless score #ban_lift_v jkat.mem matches 1 if block ~ ~-1 ~ #jkat:lift/v as @s[scores={jkat.check.jump=1..}] run function jkat:lift/v_jump
+execute unless score #ban_lift_v jkat.mem matches 1 if block ~ ~-1 ~ #jkat:lift/v as @s[scores={jkat.check.sneak=1..}] run function jkat:lift/v_sneak
 
-# facing，中间隔 fa - 3 格
-scoreboard players operation #lift_fa jkat.mem = #num_lift_fa jkat.mem
-execute unless score #ban_lift_fa jkat.mem matches 1 if block ~ ~-1 ~ #jkat:lift/fa as @s[scores={jkat.check.sneak=1..}] run function jkat:lift/fa_sneak
+# horizontal，中间隔 h - 3 格
+scoreboard players operation #lift_h jkat.mem = #num_lift_h jkat.mem
+execute unless score #ban_lift_h jkat.mem matches 1 if block ~ ~-1 ~ #jkat:lift/h as @s[scores={jkat.check.sneak=1..}] run function jkat:lift/h_sneak

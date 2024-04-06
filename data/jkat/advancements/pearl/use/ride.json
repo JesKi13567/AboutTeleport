@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "jkat": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "ender_eye"
+                    ],
+                    "nbt": "{jkat:[\"pearl\",\"ride\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "jkat:pearl/use/ride"
+    }
+}

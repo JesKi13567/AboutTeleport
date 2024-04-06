@@ -1,3 +1,4 @@
+scoreboard players reset #warp jkat.warp.d.1
 scoreboard players reset #warp jkat.warp.x.1
 scoreboard players reset #warp jkat.warp.y.1
 scoreboard players reset #warp jkat.warp.z.1

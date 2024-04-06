@@ -1,0 +1,1 @@
+give @s ender_eye{jkat: ["pearl", "ride"], HideFlags: 63, Enchantments: [{id: "unbreaking", lvl: 1}], display: {Name: '{"text": "骑乘珍珠","color": "yellow","italic": false}', Lore: ['{"text": "骑着珍珠起飞！","color": "gray","italic": false}']}} 4
