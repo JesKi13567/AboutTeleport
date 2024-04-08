@@ -12,6 +12,3 @@ function jkat:trigger/guide
 
 # 出生点记作上一地点
 function jkat:trigger/update
-
-# 初始中继点更新
-execute as @s[scores={jkat.id=1}] run function jkat:op/point/init

@@ -24,68 +24,6 @@ scoreboard objectives remove jkat.last.x1
 scoreboard objectives remove jkat.last.y1
 scoreboard objectives remove jkat.last.z1
 
-scoreboard objectives remove jkat.home.d.1
-scoreboard objectives remove jkat.home.x.1
-scoreboard objectives remove jkat.home.y.1
-scoreboard objectives remove jkat.home.z.1
-scoreboard objectives remove jkat.home.d.2
-scoreboard objectives remove jkat.home.x.2
-scoreboard objectives remove jkat.home.y.2
-scoreboard objectives remove jkat.home.z.2
-scoreboard objectives remove jkat.home.d.3
-scoreboard objectives remove jkat.home.x.3
-scoreboard objectives remove jkat.home.y.3
-scoreboard objectives remove jkat.home.z.3
-scoreboard objectives remove jkat.home.d.4
-scoreboard objectives remove jkat.home.x.4
-scoreboard objectives remove jkat.home.y.4
-scoreboard objectives remove jkat.home.z.4
-scoreboard objectives remove jkat.home.d.5
-scoreboard objectives remove jkat.home.x.5
-scoreboard objectives remove jkat.home.y.5
-scoreboard objectives remove jkat.home.z.5
-
-scoreboard objectives remove jkat.warp.d.1
-scoreboard objectives remove jkat.warp.x.1
-scoreboard objectives remove jkat.warp.y.1
-scoreboard objectives remove jkat.warp.z.1
-scoreboard objectives remove jkat.warp.d.2
-scoreboard objectives remove jkat.warp.x.2
-scoreboard objectives remove jkat.warp.y.2
-scoreboard objectives remove jkat.warp.z.2
-scoreboard objectives remove jkat.warp.d.3
-scoreboard objectives remove jkat.warp.x.3
-scoreboard objectives remove jkat.warp.y.3
-scoreboard objectives remove jkat.warp.z.3
-scoreboard objectives remove jkat.warp.d.4
-scoreboard objectives remove jkat.warp.x.4
-scoreboard objectives remove jkat.warp.y.4
-scoreboard objectives remove jkat.warp.z.4
-scoreboard objectives remove jkat.warp.d.5
-scoreboard objectives remove jkat.warp.x.5
-scoreboard objectives remove jkat.warp.y.5
-scoreboard objectives remove jkat.warp.z.5
-scoreboard objectives remove jkat.warp.d.6
-scoreboard objectives remove jkat.warp.x.6
-scoreboard objectives remove jkat.warp.y.6
-scoreboard objectives remove jkat.warp.z.6
-scoreboard objectives remove jkat.warp.d.7
-scoreboard objectives remove jkat.warp.x.7
-scoreboard objectives remove jkat.warp.y.7
-scoreboard objectives remove jkat.warp.z.7
-scoreboard objectives remove jkat.warp.d.8
-scoreboard objectives remove jkat.warp.x.8
-scoreboard objectives remove jkat.warp.y.8
-scoreboard objectives remove jkat.warp.z.8
-scoreboard objectives remove jkat.warp.d.9
-scoreboard objectives remove jkat.warp.x.9
-scoreboard objectives remove jkat.warp.y.9
-scoreboard objectives remove jkat.warp.z.9
-scoreboard objectives remove jkat.warp.d.10
-scoreboard objectives remove jkat.warp.x.10
-scoreboard objectives remove jkat.warp.y.10
-scoreboard objectives remove jkat.warp.z.10
-
 scoreboard objectives remove jkat.guide
 scoreboard objectives remove jkat.show
 scoreboard objectives remove jkat.spawn
@@ -132,68 +70,6 @@ scoreboard objectives add jkat.last.x1 dummy "上次x1"
 scoreboard objectives add jkat.last.y1 dummy "上次y1"
 scoreboard objectives add jkat.last.z1 dummy "上次z1"
 
-scoreboard objectives add jkat.home.d.1 dummy "家d1"
-scoreboard objectives add jkat.home.x.1 dummy "家x1"
-scoreboard objectives add jkat.home.y.1 dummy "家y1"
-scoreboard objectives add jkat.home.z.1 dummy "家z1"
-scoreboard objectives add jkat.home.d.2 dummy "家d2"
-scoreboard objectives add jkat.home.x.2 dummy "家x2"
-scoreboard objectives add jkat.home.y.2 dummy "家y2"
-scoreboard objectives add jkat.home.z.2 dummy "家z2"
-scoreboard objectives add jkat.home.d.3 dummy "家d3"
-scoreboard objectives add jkat.home.x.3 dummy "家x3"
-scoreboard objectives add jkat.home.y.3 dummy "家y3"
-scoreboard objectives add jkat.home.z.3 dummy "家z3"
-scoreboard objectives add jkat.home.d.4 dummy "家d4"
-scoreboard objectives add jkat.home.x.4 dummy "家x4"
-scoreboard objectives add jkat.home.y.4 dummy "家y4"
-scoreboard objectives add jkat.home.z.4 dummy "家z4"
-scoreboard objectives add jkat.home.d.5 dummy "家d5"
-scoreboard objectives add jkat.home.x.5 dummy "家x5"
-scoreboard objectives add jkat.home.y.5 dummy "家y5"
-scoreboard objectives add jkat.home.z.5 dummy "家z5"
-
-scoreboard objectives add jkat.warp.d.1 dummy "地标d1"
-scoreboard objectives add jkat.warp.x.1 dummy "地标x1"
-scoreboard objectives add jkat.warp.y.1 dummy "地标y1"
-scoreboard objectives add jkat.warp.z.1 dummy "地标z1"
-scoreboard objectives add jkat.warp.d.2 dummy "地标d2"
-scoreboard objectives add jkat.warp.x.2 dummy "地标x2"
-scoreboard objectives add jkat.warp.y.2 dummy "地标y2"
-scoreboard objectives add jkat.warp.z.2 dummy "地标z2"
-scoreboard objectives add jkat.warp.d.3 dummy "地标d3"
-scoreboard objectives add jkat.warp.x.3 dummy "地标x3"
-scoreboard objectives add jkat.warp.y.3 dummy "地标y3"
-scoreboard objectives add jkat.warp.z.3 dummy "地标z3"
-scoreboard objectives add jkat.warp.d.4 dummy "地标d4"
-scoreboard objectives add jkat.warp.x.4 dummy "地标x4"
-scoreboard objectives add jkat.warp.y.4 dummy "地标y4"
-scoreboard objectives add jkat.warp.z.4 dummy "地标z4"
-scoreboard objectives add jkat.warp.d.5 dummy "地标d5"
-scoreboard objectives add jkat.warp.x.5 dummy "地标x5"
-scoreboard objectives add jkat.warp.y.5 dummy "地标y5"
-scoreboard objectives add jkat.warp.z.5 dummy "地标z5"
-scoreboard objectives add jkat.warp.d.6 dummy "地标d6"
-scoreboard objectives add jkat.warp.x.6 dummy "地标x6"
-scoreboard objectives add jkat.warp.y.6 dummy "地标y6"
-scoreboard objectives add jkat.warp.z.6 dummy "地标z6"
-scoreboard objectives add jkat.warp.d.7 dummy "地标d7"
-scoreboard objectives add jkat.warp.x.7 dummy "地标x7"
-scoreboard objectives add jkat.warp.y.7 dummy "地标y7"
-scoreboard objectives add jkat.warp.z.7 dummy "地标z7"
-scoreboard objectives add jkat.warp.d.8 dummy "地标d8"
-scoreboard objectives add jkat.warp.x.8 dummy "地标x8"
-scoreboard objectives add jkat.warp.y.8 dummy "地标y8"
-scoreboard objectives add jkat.warp.z.8 dummy "地标z8"
-scoreboard objectives add jkat.warp.d.9 dummy "地标d9"
-scoreboard objectives add jkat.warp.x.9 dummy "地标x9"
-scoreboard objectives add jkat.warp.y.9 dummy "地标y9"
-scoreboard objectives add jkat.warp.z.9 dummy "地标z9"
-scoreboard objectives add jkat.warp.d.10 dummy "地标d10"
-scoreboard objectives add jkat.warp.x.10 dummy "地标x10"
-scoreboard objectives add jkat.warp.y.10 dummy "地标y10"
-scoreboard objectives add jkat.warp.z.10 dummy "地标z10"
-
 scoreboard objectives add jkat.guide trigger "获取传送指南"
 scoreboard objectives add jkat.show trigger "显示玩家ID列表"
 scoreboard objectives add jkat.spawn trigger "返回主城"
@@ -218,6 +94,10 @@ scoreboard objectives add jkat.meow trigger "神秘触发器"
 # 其他
 scoreboard players set #state jkat.mem 1
 gamerule doImmediateRespawn false
+
+# 拒绝穷举
+data modify storage jkat:temp num set value 1
+function jkat:init_ with storage jkat:temp
 
 # 默认设置等见 jkat:tick
 

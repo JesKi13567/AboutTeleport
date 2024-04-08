@@ -59,8 +59,8 @@ scoreboard players reset @s jkat.check.damage.get
 scoreboard players reset @s jkat.check.damage.resist
 scoreboard players reset @s jkat.check.sneak
 
-# 传送冲突
-execute as @s[scores={jkat.mode=1..,jkat.wait=..2}] if entity @a[distance=.1..,scores={jkat.mode=1..,jkat.wait=..2}] run function jkat:trigger/fail/conflict
+# 传送冲突（v1.1起不存在）
+#execute as @s[scores={jkat.mode=1..,jkat.wait=..2}] if entity @a[distance=.1..,scores={jkat.mode=1..,jkat.wait=..2}] run function jkat:trigger/fail/conflict
 
 # 传送成功
 execute as @s[scores={jkat.mode=1..,jkat.wait=0}] run function jkat:trigger/run/global
