@@ -1,2 +1,0 @@
-$execute if score #num_home jkat.mem matches $(num).. unless score @s jkat.home.x.$(num) matches 0.. run scoreboard players remove @s jkat.home.flag 1
-$execute if score #num_home jkat.mem matches $(num).. unless score @s jkat.home.x.$(num) matches ..0 run scoreboard players remove @s jkat.home.flag 1

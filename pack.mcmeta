@@ -1,20 +1,26 @@
 {
   "pack": {
-    "pack_format": 18,
+    "min_format": 101, 
+    "max_format": 105, 
     "description": [
-      "",
+      "", 
       {
-        "text": "关于传送",
+        "text": "关于传送", 
         "color": "gold"
-      },
-      " | ",
+      }, 
+      "\n", 
       {
-        "text": "JK137",
+        "text": "By JK137", 
         "color": "aqua"
-      },
+      }
+    ]
+  },
+  "overlays": {
+    "entries": [
       {
-        "text": "\nv1.1 for 1.20.2-1.20.4",
-        "color": "white"
+        "directory": "26_2",
+        "min_format": 105,
+        "max_format": 105
       }
     ]
   }

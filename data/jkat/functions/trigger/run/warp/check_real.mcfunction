@@ -1,2 +1,0 @@
-$execute unless score #warp jkat.warp.x.$(num) matches 0.. run scoreboard players remove #warp jkat.mem 1
-$execute unless score #warp jkat.warp.x.$(num) matches ..0 run scoreboard players remove #warp jkat.mem 1

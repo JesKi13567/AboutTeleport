@@ -1,0 +1,25 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "amethyst_block",
+        "ender_pearl"
+    ],
+    "result": {
+        "id": "knowledge_book",
+        "components": {
+            "custom_data": {
+                "jkat": [
+                    "pearl",
+                    "craft"
+                ]
+            },
+            "enchantment_glint_override": true,
+            "item_model": "ender_eye",
+            "custom_name": {
+                "text": "折跃珍珠",
+                "color": "yellow",
+                "italic": false
+            }
+        }
+    }
+}

@@ -1,1 +1,0 @@
-$execute if score #num_home jkat.mem matches $(num).. run function jkat:trigger/run/home/set with storage jkat:temp

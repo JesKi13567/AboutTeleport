@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "jkat": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "echo_shard"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "jkat:pearl/use/ing"
+    }
+}
