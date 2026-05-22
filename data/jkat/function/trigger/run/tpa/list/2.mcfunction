@@ -1,4 +1,10 @@
 # 被选中玩家
-tellraw @p[scores={jkat.list=1..}] ["", {text: "--> ", color: "gray"}, {text: "[", color: "gray"}, {score: {name: "@s", objective: "jkat.id"}, color: "yellow"}, {text: "]", color: "gray"}, "  ", {selector: "@s"}]
 scoreboard players set @s jkat.list.ed 1
+data modify entity @e[limit=1, type=text_display, tag=jkat, tag=tpa_list] text set value {selector: "@a[limit=1, scores={jkat.list.ed=1}]"}
+data modify storage jk:at tpa.name set from entity @e[limit=1, type=text_display, tag=jkat, tag=tpa_list] text.text
+function jkat:trigger/run/tpa/list/3 with storage jk:at tpa
+$data modify storage jk:at tpa.dialog.actions append value {width: 50, label: {text: "tpa", color: "green"}, action: {type: "run_command", command: "/trigger jkat.tpa set $(n)"}}
+$data modify storage jk:at tpa.dialog.actions append value {width: 50, label: {text: "tpahere", color: "aqua"}, action: {type: "run_command", command: "/trigger jkat.tpahere set $(n)"}}
+
 scoreboard players reset #tpa.order jkat.int
+scoreboard players set @s jkat.list.ed 2

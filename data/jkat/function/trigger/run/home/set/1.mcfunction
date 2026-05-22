@@ -1,4 +1,4 @@
-scoreboard players set #home_flag jkat.int 1
+scoreboard players set #home.flag jkat.int 1
 
 $execute if dimension overworld run scoreboard players set @s jkat.home.d.$(n) 0
 $execute if dimension the_nether run scoreboard players set @s jkat.home.d.$(n) -1

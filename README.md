@@ -1,5 +1,5 @@
 # About Teleport - 关于传送
-## 当前版本：v1.2 for MC26.1-26.2.x
+## 当前版本：v1.2 for MC1.21.11-26.2.x
 ### 功能列表
 - 指南书。
 - 主城（/trigger jkat.spawn）。
@@ -20,7 +20,7 @@
 ### 注意事项
 - 数据包安装在 `/saves/世界文件夹/datapacks/` 下。
 - 在游戏中使用 `/reload` 或 `/function #load` 显示出文字则为安装成功。
-- 请求传送玩家，需先使用玩家指南中的 “玩家列表” 来看到玩家ID分数和方便传送。
+- 请求传送玩家，需先使用玩家指南中的 “玩家列表” 。
 
 ### 作者
 - 封面：[leo725mc](https://www.mcmod.cn/author/26293.html)
