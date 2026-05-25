@@ -1,2 +1,0 @@
-$data modify storage jk:at warp.temp.dialog.actions append value {width: 200, label: ["", {text: "$(name)", color: "gold"}, " ($(id))"], action: {type: "run_command", command: "/trigger jkat.warp set $(id)"}}
-$data modify storage jk:at warp.temp.dialog.actions append value {width: 50, label: {text: "删除", color: "red"}, action: {type: "run_command", command: "function jkat:trigger/run/warp/op/remove {id: $(id), c: $(c)}"}}

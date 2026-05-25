@@ -1,0 +1,449 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "written_book",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": {
+                  "jkat": [
+                    "guide",
+                    "player"
+                  ]
+                },
+                "written_book_content": {
+                  "author": "JK137",
+                  "title": ""
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "storage": "jk:at",
+                  "nbt": "txt.jkat",
+                  "interpret": true,
+                  "color": "gold",
+                  "italic": false
+                },
+                {
+                  "storage": "jk:at",
+                  "nbt": "txt.guide.player",
+                  "interpret": true,
+                  "color": "green",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_written_book_pages",
+              "mode": "replace_all",
+              "pages": [
+                [
+                  "[",
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.back",
+                    "interpret": true,
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.back"
+                    },
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "/trigger jkat.back"
+                    }
+                  },
+                  "] ",
+                  {
+                    "text": "[",
+                    "color": "red"
+                  },
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.spawn.name",
+                    "interpret": true,
+                    "color": "red",
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.spawn"
+                    },
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "/trigger jkat.spawn"
+                    }
+                  },
+                  {
+                    "text": "]",
+                    "color": "red"
+                  },
+                  " ",
+                  {
+                    "text": "[",
+                    "color": "blue"
+                  },
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.tpr.name",
+                    "interpret": true,
+                    "color": "blue",
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.tpr"
+                    },
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": [
+                        "/trigger jkat.tpr\n",
+                        {
+                          "storage": "jk:at",
+                          "nbt": "txt.button.tpr.lore",
+                          "interpret": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "]",
+                    "color": "blue"
+                  },
+                  "\n\n",
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.list",
+                    "interpret": true
+                  },
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.char.colon",
+                    "interpret": true
+                  },
+                  {
+                    "text": "[",
+                    "color": "red"
+                  },
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.player",
+                    "interpret": true,
+                    "color": "red",
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.list"
+                    },
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "/trigger jkat.list"
+                    }
+                  },
+                  {
+                    "text": "]",
+                    "color": "red"
+                  },
+                  " ",
+                  {
+                    "text": "[",
+                    "color": "blue"
+                  },
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.warp",
+                    "interpret": true,
+                    "color": "blue",
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.list set 2"
+                    },
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "/trigger jkat.list set 2"
+                    }
+                  },
+                  {
+                    "text": "]",
+                    "color": "blue"
+                  },
+                  "\n\n",
+                  {
+                    "text": "[1]",
+                    "color": "blue",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "1"
+                    },
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.sethome set 1"
+                    }
+                  },
+                  "  ",
+                  {
+                    "text": "[2]",
+                    "color": "red",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "2"
+                    },
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.sethome set 2"
+                    }
+                  },
+                  "  ",
+                  {
+                    "text": "[3]",
+                    "color": "blue",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "3"
+                    },
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.sethome set 3"
+                    }
+                  },
+                  "  ",
+                  {
+                    "text": "[4]",
+                    "color": "red",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "4"
+                    },
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.sethome set 4"
+                    }
+                  },
+                  "  ",
+                  {
+                    "text": "[5]",
+                    "color": "blue",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "5"
+                    },
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.sethome set 5"
+                    }
+                  },
+                  "\n",
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.home.line",
+                    "interpret": true
+                  },
+                  "\n",
+                  {
+                    "text": "[1]",
+                    "color": "blue",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "1"
+                    },
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.home set 1"
+                    }
+                  },
+                  "  ",
+                  {
+                    "text": "[2]",
+                    "color": "red",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "2"
+                    },
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.home set 2"
+                    }
+                  },
+                  "  ",
+                  {
+                    "text": "[3]",
+                    "color": "blue",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "3"
+                    },
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.home set 3"
+                    }
+                  },
+                  "  ",
+                  {
+                    "text": "[4]",
+                    "color": "red",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "4"
+                    },
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.home set 4"
+                    }
+                  },
+                  "  ",
+                  {
+                    "text": "[5]",
+                    "color": "blue",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "5"
+                    },
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.home set 5"
+                    }
+                  },
+                  "\n\n",
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.lift.name",
+                    "interpret": true
+                  },
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.char.colon",
+                    "interpret": true
+                  },
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.lift.v.name",
+                    "interpret": true,
+                    "color": "red",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": [
+                        {
+                          "storage": "jk:at",
+                          "nbt": "txt.button.lift.v.p1",
+                          "interpret": true
+                        },
+                        {
+                          "translate": "block.minecraft.iron_block",
+                          "color": "yellow"
+                        },
+                        {
+                          "storage": "jk:at",
+                          "nbt": "txt.button.lift.v.p2",
+                          "interpret": true
+                        }
+                      ]
+                    }
+                  },
+                  " ",
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.lift.h.name",
+                    "interpret": true,
+                    "color": "blue",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": [
+                        {
+                          "storage": "jk:at",
+                          "nbt": "txt.button.lift.h.p1",
+                          "interpret": true
+                        },
+                        {
+                          "translate": "block.minecraft.gold_block",
+                          "color": "yellow"
+                        },
+                        {
+                          "storage": "jk:at",
+                          "nbt": "txt.button.lift.h.p2",
+                          "interpret": true
+                        }
+                      ]
+                    }
+                  },
+                  "\n\n",
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.pearl.name",
+                    "interpret": true,
+                    "color": "red",
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": [
+                        "",
+                        {
+                          "storage": "jk:at",
+                          "nbt": "txt.button.pearl.p1",
+                          "interpret": true,
+                          "color": "yellow"
+                        },
+                        "\n",
+                        {
+                          "translate": "item.minecraft.ender_pearl"
+                        },
+                        "*1 + ",
+                        {
+                          "translate": "block.minecraft.amethyst_block"
+                        },
+                        "*1\n\n",
+                        {
+                          "storage": "jk:at",
+                          "nbt": "txt.button.pearl.p2",
+                          "interpret": true,
+                          "color": "gold"
+                        },
+                        "\n",
+                        {
+                          "storage": "jk:at",
+                          "nbt": "txt.button.pearl.p3",
+                          "interpret": true
+                        }
+                      ]
+                    }
+                  },
+                  "\n\n",
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.tpa.bool.accept",
+                    "interpret": true,
+                    "color": "dark_blue",
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.tpa.ok"
+                    },
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "/trigger jkat.tpa.ok"
+                    }
+                  },
+                  " ",
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.tpa.bool.deny",
+                    "interpret": true,
+                    "color": "dark_red",
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.tpa.ok set -1"
+                    },
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "/trigger jkat.tpa.ok set -1"
+                    }
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

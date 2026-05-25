@@ -9,7 +9,7 @@ tp @s[scores={jkat.mode=8}] @p[tag=jkat_tpa_target]
 execute as @s[scores={jkat.mode=9}] as @p[tag=jkat_tpa_target] at @s run function jkat:trigger/run/back/update
 tp @p[tag=jkat_tpa_target] @s[scores={jkat.mode=9}]
 
-tellraw @s {text: "传送成功！", color: "gold"}
+tellraw @s [{storage: "jk:at", nbt: "txt.jkat", interpret: true, color: "gold"}, {storage: "jk:at", nbt: "txt.tellraw.tpa.success", interpret: true}]
 scoreboard players set @s jkat.tpa.flag.tp 0
 scoreboard players set @a[tag=jkat_tpa_target] jkat.tpa.receive 0
 scoreboard players reset @a[tag=jkat_tpa_target] jkat.tpa.flag.ok

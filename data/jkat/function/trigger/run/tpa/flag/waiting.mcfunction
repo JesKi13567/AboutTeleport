@@ -14,4 +14,4 @@ execute as @s[scores={jkat.mode=0}] run return 0
 
 execute if score #tpa.flag jkat.int matches 1 run function jkat:trigger/run/tpa/flag/bool/accept
 execute if score #tpa.flag jkat.int matches -1 run function jkat:trigger/run/tpa/flag/bool/deny
-execute as @s[scores={jkat.mode=8..9, jkat.tpa.flag.tp=0, jkat.wait.tpa=0}] run tellraw @s {text: "对方未响应。", color: "gold"}
+execute as @s[scores={jkat.mode=8..9, jkat.tpa.flag.tp=0, jkat.wait.tpa=0}] run tellraw @s [{storage: "jk:at", nbt: "txt.jkat", interpret: true, color: "gold"}, {storage: "jk:at", nbt: "txt.tellraw.tpa.no_response", interpret: true}]

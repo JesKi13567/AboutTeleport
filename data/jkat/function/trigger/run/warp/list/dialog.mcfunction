@@ -1,1 +1,1 @@
-$dialog show @s {type: "multi_action", title: "地标列表", columns: 1, actions: $(actions)}
+$dialog show @s {type: "multi_action", title: "$(warp_list)", columns: 2, actions: $(actions)}

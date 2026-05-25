@@ -1,3 +1,3 @@
 function jkat:trigger/run/back/update
 function jkat:trigger/run/tp_real with storage jk:at spawn
-tellraw @s {text: "已传送到主城！", color: "gold"}
+tellraw @s [{storage: "jk:at", nbt: "txt.jkat", interpret: true, color: "gold"}, {storage: "jk:at", nbt: "txt.tellraw.spawn.ed", interpret: true}]

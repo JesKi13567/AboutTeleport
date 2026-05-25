@@ -1,1 +1,0 @@
-give @s echo_shard[custom_data={jkat: ["pearl", "line"]}, enchantment_glint_override=true, item_model=ender_eye, consumable={consume_seconds: 1000000, animation: "none"}, custom_name={text: "折跃珍珠", color: "yellow", italic: false}] 1

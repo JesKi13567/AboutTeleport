@@ -8,4 +8,4 @@ $execute store result storage jk:at pos.rx int 1 run scoreboard players get @s j
 $execute store result storage jk:at pos.ry int 1 run scoreboard players get @s jkat.home.ry.$(n)
 
 function jkat:trigger/run/tp_real with storage jk:at pos
-$tellraw @s [{text: "已回到家", color: "gold"}, {text: " $(n) ", color: "yellow"}, "！"]
+$tellraw @s [{storage: "jk:at", nbt: "txt.jkat", interpret: true, color: "gold"}, {storage: "jk:at", nbt: "txt.tellraw.home.ed", interpret: true}, {text: " $(n)", color: "yellow"}, {storage: "jk:at", nbt: "txt.char.exclamation", interpret: true}]

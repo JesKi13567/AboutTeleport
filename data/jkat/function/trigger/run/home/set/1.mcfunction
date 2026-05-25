@@ -9,4 +9,4 @@ $execute store result score @s jkat.home.z.$(n) run data get entity @s Pos[2] 1
 $execute store result score @s jkat.home.rx.$(n) run data get entity @s Rotation[0] 1
 $execute store result score @s jkat.home.ry.$(n) run data get entity @s Rotation[1] 1
 
-$tellraw @s [{text: "成功设置家", color: "gold"}, {text: " $(n) ", color: "yellow"}, "！"]
+$tellraw @s [{storage: "jk:at", nbt: "txt.jkat", interpret: true, color: "gold"}, {storage: "jk:at", nbt: "txt.tellraw.home.set.success", interpret: true}, {text: " $(n)", color: "yellow"}, {storage: "jk:at", nbt: "txt.char.exclamation", interpret: true}]

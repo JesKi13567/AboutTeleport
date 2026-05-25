@@ -1,4 +1,4 @@
-$execute if data storage jk:at warp.list.n.$(id) run return run tellraw @s {text: "此ID地标已存在！($(id))", color: "gold"}
+$execute if data storage jk:at warp.list.n.$(id) run return run tellraw @s [{storage: "jk:at", nbt: "txt.jkat", interpret: true, color: "gold"}, {storage: "jk:at", nbt: "txt.button.warp", interpret: true}, {text: " $(id) ", color: "yellow"}, {storage: "jk:at", nbt: "txt.tellraw.already_exist", interpret: true}]
 
 $data modify storage jk:at warp.list.l append value $(id)
 $data modify storage jk:at warp.list.n.$(id).name set value $(name)
@@ -11,4 +11,4 @@ $execute store result storage jk:at warp.list.n.$(id).z int 1 run data get entit
 $execute store result storage jk:at warp.list.n.$(id).rx int 1 run data get entity @s Rotation[0] 1
 $execute store result storage jk:at warp.list.n.$(id).ry int 1 run data get entity @s Rotation[1] 1
 
-$tellraw @s ["", {text: "成功设置地标 ", color: "gold"}, {text: $(name), color: "yellow"}, " ($(id))", {text: "！\n", color: "gold"}, {storage: "jk:at", nbt: "warp.list.n.$(id).d"}, ": ", {storage: "jk:at", nbt: "warp.list.n.$(id).x"}, ", ", {storage: "jk:at", nbt: "warp.list.n.$(id).y"}, ", ", {storage: "jk:at", nbt: "warp.list.n.$(id).z"}, ". (", {storage: "jk:at", nbt: "warp.list.n.$(id).rx"}, ", ", {storage: "jk:at", nbt: "warp.list.n.$(id).ry"}, ")"]
+$tellraw @s ["", {storage: "jk:at", nbt: "txt.jkat", interpret: true, color: "gold"}, {storage: "jk:at", nbt: "txt.tellraw.warp.set", interpret: true, color: "gold"}, {text: $(name), color: "yellow"}, " ($(id)) ", {storage: "jk:at", nbt: "txt.char.exclamation", interpret: true, color: "gold"}, "\n", {storage: "jk:at", nbt: "warp.list.n.$(id).d"}, ": ", {storage: "jk:at", nbt: "warp.list.n.$(id).x"}, ", ", {storage: "jk:at", nbt: "warp.list.n.$(id).y"}, ", ", {storage: "jk:at", nbt: "warp.list.n.$(id).z"}, ". (", {storage: "jk:at", nbt: "warp.list.n.$(id).rx"}, ", ", {storage: "jk:at", nbt: "warp.list.n.$(id).ry"}, ")"]

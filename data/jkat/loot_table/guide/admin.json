@@ -1,0 +1,291 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "written_book",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": {
+                  "jkat": [
+                    "guide",
+                    "op"
+                  ]
+                },
+                "written_book_content": {
+                  "author": "JK137",
+                  "title": ""
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "storage": "jk:at",
+                  "nbt": "txt.jkat",
+                  "interpret": true,
+                  "color": "gold",
+                  "italic": false
+                },
+                {
+                  "storage": "jk:at",
+                  "nbt": "txt.guide.admin",
+                  "interpret": true,
+                  "color": "light_purple",
+                  "bold": true
+                }
+              ]
+            },
+            {
+              "function": "set_written_book_pages",
+              "mode": "replace_all",
+              "pages": [
+                [
+                  "",
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.creative",
+                    "interpret": true,
+                    "color": "dark_green"
+                  },
+                  "\n\n",
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.module.list",
+                    "interpret": true,
+                    "color": "light_purple",
+                    "bold": true,
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.admin.trigger set 2"
+                    },
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": {
+                        "storage": "jk:at",
+                        "nbt": "txt.button.show_in_chatbox",
+                        "interpret": true
+                      }
+                    }
+                  },
+                  "\n\n",
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.spawn.name",
+                    "interpret": true
+                  },
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.char.colon",
+                    "interpret": true
+                  },
+                  {
+                    "text": "[",
+                    "color": "blue"
+                  },
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.set",
+                    "interpret": true,
+                    "color": "blue",
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.admin.trigger set 8"
+                    },
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": {
+                        "storage": "jk:at",
+                        "nbt": "txt.button.spawn.set",
+                        "interpret": true
+                      }
+                    }
+                  },
+                  {
+                    "text": "]",
+                    "color": "blue"
+                  },
+                  "  ",
+                  {
+                    "text": "[",
+                    "color": "red"
+                  },
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.delete",
+                    "interpret": true,
+                    "color": "red",
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.admin.trigger set 9"
+                    },
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": {
+                        "storage": "jk:at",
+                        "nbt": "txt.button.spawn.delete",
+                        "interpret": true
+                      }
+                    }
+                  },
+                  {
+                    "text": "]",
+                    "color": "red"
+                  },
+                  "\n\n",
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.warp",
+                    "interpret": true
+                  },
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.char.colon",
+                    "interpret": true
+                  },
+                  {
+                    "text": "[",
+                    "color": "blue"
+                  },
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.list",
+                    "interpret": true,
+                    "color": "blue",
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.admin.trigger set 3"
+                    },
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": [
+                        {
+                          "storage": "jk:at",
+                          "nbt": "txt.button.list",
+                          "interpret": true
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "]",
+                    "color": "blue"
+                  },
+                  "  ",
+                  {
+                    "text": "[",
+                    "color": "red"
+                  },
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.set",
+                    "interpret": true,
+                    "color": "red",
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.admin.trigger set 4"
+                    },
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": {
+                        "storage": "jk:at",
+                        "nbt": "txt.button.show_in_chatbox",
+                        "interpret": true
+                      }
+                    }
+                  },
+                  {
+                    "text": "]",
+                    "color": "red"
+                  },
+                  "\n\n",
+                  {
+                    "translate": "gamerule.minecraft.send_command_feedback"
+                  },
+                  "：",
+                  {
+                    "text": "[0]",
+                    "color": "red",
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.admin.trigger set 10"
+                    },
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "0"
+                    }
+                  },
+                  "  ",
+                  {
+                    "text": "[1]",
+                    "color": "blue",
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.admin.trigger set 11"
+                    },
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": "1"
+                    }
+                  },
+                  "\n\n",
+                  {
+                    "storage": "jk:at",
+                    "nbt": "txt.button.pearl.get",
+                    "interpret": true,
+                    "color": "gold",
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/trigger jkat.admin.trigger set 7"
+                    },
+                    "hover_event": {
+                      "action": "show_text",
+                      "value": {
+                        "storage": "jk:at",
+                        "nbt": "txt.button.module.ban_but_work",
+                        "interpret": true
+                      }
+                    }
+                  },
+                  "  ",
+                  {
+                    "text": "[GitHub]",
+                    "color": "blue",
+                    "click_event": {
+                      "action": "open_url",
+                      "url": "https://github.com/JesKi13567/AboutTeleport"
+                    }
+                  },
+                  "\n\nLang: ",
+                  {
+                    "text": "[ZH]",
+                    "color": "blue",
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/function jkat:init/lang/zh_cn"
+                    }
+                  },
+                  " ",
+                  {
+                    "text": "[EN]",
+                    "color": "red",
+                    "click_event": {
+                      "action": "run_command",
+                      "command": "/function jkat:init/lang/en_us"
+                    }
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

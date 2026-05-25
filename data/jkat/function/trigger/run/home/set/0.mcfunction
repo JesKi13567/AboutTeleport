@@ -1,9 +1,11 @@
 scoreboard players reset #home.flag jkat.int
-execute if dimension overworld if score #BAN.home.overworld jkat.int matches 1 run return run tellraw @s {text: "管理员禁用了此维度的home模块！", color: "gold"}
-execute if dimension the_nether if score #BAN.home.the_nether jkat.int matches 1 run return run tellraw @s {text: "管理员禁用了此维度的home模块！", color: "gold"}
-execute if dimension the_end if score #BAN.home.the_end jkat.int matches 1 run return run tellraw @s {text: "管理员禁用了此维度的home模块！", color: "gold"}
-
-execute store result storage jk:at score.n int 1 run scoreboard players get @s jkat.sethome
-execute if score @s[scores={jkat.sethome=1..}] jkat.sethome <= #NUM.home jkat.int run function jkat:trigger/run/home/set/1 with storage jk:at score
-execute unless score #home.flag jkat.int matches 1 run tellraw @s {text: "你不能设置这个家！", color: "gold"}
+scoreboard players operation #home.n jkat.int = @s jkat.sethome
 scoreboard players reset @s jkat.sethome
+
+execute if dimension overworld if score #BAN.home.overworld jkat.int matches 1 run return run tellraw @s [{storage: "jk:at", nbt: "txt.jkat", interpret: true, color: "gold"}, {translate: "flat_world_preset.minecraft.overworld", color: "white"}, {storage: "jk:at", nbt: "txt.tellraw.dimension", interpret: true}, {storage: "jk:at", nbt: "txt.button.home.name", interpret: true, color: "yellow"}, {storage: "jk:at", nbt: "txt.tellraw.module_banned", interpret: true}]
+execute if dimension the_nether if score #BAN.home.the_nether jkat.int matches 1 run return run tellraw @s [{storage: "jk:at", nbt: "txt.jkat", interpret: true, color: "gold"}, {translate: "advancements.nether.root.title", color: "white"}, {storage: "jk:at", nbt: "txt.tellraw.dimension", interpret: true}, {storage: "jk:at", nbt: "txt.button.home.name", interpret: true, color: "yellow"}, {storage: "jk:at", nbt: "txt.tellraw.module_banned", interpret: true}]
+execute if dimension the_end if score #BAN.home.the_end jkat.int matches 1 run return run tellraw @s [{storage: "jk:at", nbt: "txt.jkat", interpret: true, color: "gold"}, {translate: "advancements.end.root.title", color: "white"}, {storage: "jk:at", nbt: "txt.tellraw.dimension", interpret: true}, {storage: "jk:at", nbt: "txt.button.home.name", interpret: true, color: "yellow"}, {storage: "jk:at", nbt: "txt.tellraw.module_banned", interpret: true}]
+
+execute store result storage jk:at score.n int 1 run scoreboard players get #home.n jkat.int
+execute if score #home.n jkat.int matches 1.. if score #home.n jkat.int <= #NUM.home jkat.int run function jkat:trigger/run/home/set/1 with storage jk:at score
+execute unless score #home.flag jkat.int matches 1 run tellraw @s [{storage: "jk:at", nbt: "txt.jkat", interpret: true, color: "gold"}, {storage: "jk:at", nbt: "txt.tellraw.home.set.cannot", interpret: true}]

@@ -1,7 +1,6 @@
 scoreboard players reset @s jkat.back
-execute if score #BAN.back jkat.int matches 1 run return run tellraw @s {text: "管理员禁用了back模块！", color: "gold"}
-
-tellraw @s {text: "正在返回上一地点...", color: "gold"}
+execute if score #BAN.back jkat.int matches 1 run return run tellraw @s [{storage: "jk:at", nbt: "txt.jkat", interpret: true, color: "gold"}, {storage: "jk:at", nbt: "txt.button.back", interpret: true, color: "yellow"}, {storage: "jk:at", nbt: "txt.tellraw.module_banned", interpret: true}]
+tellraw @s [{storage: "jk:at", nbt: "txt.jkat", interpret: true, color: "gold"}, {storage: "jk:at", nbt: "txt.tellraw.back.ing", interpret: true}]
 scoreboard players set @s jkat.mode 5
 function jkat:trigger/cd
 
