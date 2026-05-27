@@ -1,5 +1,10 @@
 scoreboard players set #home.flag jkat.int 1
 
+$execute as @s[scores={jkat.home.d.$(n)=0}] run data modify storage jk:at score.d set value "overworld"
+$execute as @s[scores={jkat.home.d.$(n)=-1}] run data modify storage jk:at score.d set value "the_nether"
+$execute as @s[scores={jkat.home.d.$(n)=1}] run data modify storage jk:at score.d set value "the_end"
+$execute as @s[scores={jkat.home.d.$(n)=-1..1}] run function jkat:trigger/run/home/set/2 with storage jk:at score
+
 $execute if dimension overworld run scoreboard players set @s jkat.home.d.$(n) 0
 $execute if dimension the_nether run scoreboard players set @s jkat.home.d.$(n) -1
 $execute if dimension the_end run scoreboard players set @s jkat.home.d.$(n) 1

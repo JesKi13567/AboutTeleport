@@ -1,3 +1,5 @@
+$scoreboard players set #warp.temp jkat.int $(id)
+execute if score #warp.temp jkat.int matches ..0 run return run tellraw @s [{storage: "jk:at", nbt: "txt.jkat", interpret: true, color: "gold"}, {storage: "jk:at", nbt: "txt.button.tip.warp", interpret: true}]
 $execute if data storage jk:at warp.list.n.$(id) run return run tellraw @s [{storage: "jk:at", nbt: "txt.jkat", interpret: true, color: "gold"}, {storage: "jk:at", nbt: "txt.button.warp", interpret: true}, {text: " $(id) ", color: "yellow"}, {storage: "jk:at", nbt: "txt.tellraw.already_exist", interpret: true}]
 
 $data modify storage jk:at warp.list.l append value $(id)

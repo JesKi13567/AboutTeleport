@@ -10,4 +10,7 @@ execute as @s[scores={jkat.list=1}] run kill @e[type=text_display, tag=jkat, tag
 
 execute as @s[scores={jkat.list=2}] run function jkat:trigger/run/warp/list/0
 
+execute as @s[scores={jkat.list=101}] run tellraw @s [{storage: "jk:at", nbt: "txt.jkat", interpret: true, color: "gold"}, {storage: "jk:at", nbt: "txt.button.tip.off.ed", interpret: true}]
+scoreboard players set @s[scores={jkat.list=101}] jkat.tip.no_guide 1
+
 scoreboard players reset @s jkat.list

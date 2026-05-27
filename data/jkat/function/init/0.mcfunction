@@ -79,3 +79,4 @@ scoreboard objectives remove jkat.distance
 scoreboard objectives remove jkat.lift
 scoreboard objectives remove jkat.admin.is
 scoreboard objectives remove jkat.admin.trigger
+scoreboard objectives remove jkat.tip.no_guide

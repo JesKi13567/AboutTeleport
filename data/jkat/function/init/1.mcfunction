@@ -79,6 +79,7 @@ scoreboard objectives add jkat.distance dummy "传送距离分数"
 scoreboard objectives add jkat.lift dummy "电梯传送冷却"
 scoreboard objectives add jkat.admin.is dummy "管理员标记"
 scoreboard objectives add jkat.admin.trigger trigger "管理员用触发器"
+scoreboard objectives add jkat.tip.no_guide dummy "未携带指南提示"
 
 scoreboard players reset #id jkat.int
 scoreboard players set #loaded jkat.int 1

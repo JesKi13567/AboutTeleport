@@ -206,36 +206,6 @@
                   },
                   "\n\n",
                   {
-                    "translate": "gamerule.minecraft.send_command_feedback"
-                  },
-                  "：",
-                  {
-                    "text": "[0]",
-                    "color": "red",
-                    "click_event": {
-                      "action": "run_command",
-                      "command": "/trigger jkat.admin.trigger set 10"
-                    },
-                    "hover_event": {
-                      "action": "show_text",
-                      "value": "0"
-                    }
-                  },
-                  "  ",
-                  {
-                    "text": "[1]",
-                    "color": "blue",
-                    "click_event": {
-                      "action": "run_command",
-                      "command": "/trigger jkat.admin.trigger set 11"
-                    },
-                    "hover_event": {
-                      "action": "show_text",
-                      "value": "1"
-                    }
-                  },
-                  "\n\n",
-                  {
                     "storage": "jk:at",
                     "nbt": "txt.button.pearl.get",
                     "interpret": true,
@@ -271,7 +241,7 @@
                       "command": "/function jkat:init/lang/zh_cn"
                     }
                   },
-                  " ",
+                  "  ",
                   {
                     "text": "[EN]",
                     "color": "red",
