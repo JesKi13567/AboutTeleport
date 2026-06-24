@@ -1,17 +1,25 @@
 {
-    "criteria": {
-        "jkat": {
-            "trigger": "using_item",
-            "conditions": {
-                "item": {
-                    "items": [
-                        "echo_shard"
-                    ]
-                }
+  "criteria": {
+    "jkat": {
+      "trigger": "using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "echo_shard"
+          ],
+          "components": {
+            "custom_data": {
+              "jkat": [
+                "pearl",
+                "line"
+              ]
             }
+          }
         }
-    },
-    "rewards": {
-        "function": "jkat:pearl/use/ing"
+      }
     }
+  },
+  "rewards": {
+    "function": "jkat:pearl/use/ing"
+  }
 }

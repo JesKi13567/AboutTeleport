@@ -5,12 +5,12 @@
     "description": [
       "",
       {
-        "text": "关于传送",
+        "text": "About Teleport",
         "color": "gold"
       },
-      "\n",
+      "\nBy ",
       {
-        "text": "By JK137",
+        "text": "JK137",
         "color": "aqua"
       }
     ]

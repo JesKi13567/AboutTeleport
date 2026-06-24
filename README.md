@@ -1,5 +1,5 @@
 # About Teleport - 关于传送
-## v1.2 for MC1.21.11-26.2.x
+## v1.2.1 for MC1.21.11-26.2.x
 - [简体中文](#zh_cn)
 - [English](#en_us)
 

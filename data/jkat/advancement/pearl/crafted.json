@@ -1,13 +1,13 @@
 {
-    "criteria": {
-        "jkat": {
-            "trigger": "recipe_crafted",
-            "conditions": {
-                "recipe_id": "jkat:pearl"
-            }
-        }
-    },
-    "rewards": {
-        "function": "jkat:pearl/craft/global"
+  "criteria": {
+    "jkat": {
+      "trigger": "recipe_crafted",
+      "conditions": {
+        "recipe_id": "jkat:pearl"
+      }
     }
+  },
+  "rewards": {
+    "function": "jkat:pearl/craft/global"
+  }
 }
