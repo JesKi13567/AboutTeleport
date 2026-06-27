@@ -1,5 +1,5 @@
 # About Teleport - 关于传送
-## v1.2.1 for MC1.21.11-26.2.x
+## v1.2.2 for MC1.21.11-26.2.x
 - [简体中文](#zh_cn)
 - [English](#en_us)
 
@@ -25,6 +25,7 @@
 - 数据包安装在 `/saves/<世界文件夹>/datapacks/` 下。
 - 在游戏中使用 `/reload` 或 `/function #load` 显示出文字则为安装成功。
 - 此数据包仅支持主世界/下界/末地维度。
+- 固定点传送（非随机或玩家间）时还可传送拴绳牵引的实体和骑乘的实体。
 
 ### 作者
 - 封面：[leo725mc](https://www.mcmod.cn/author/26293.html)
@@ -52,6 +53,7 @@ For admins, all of the above items can be freely configured!
 - Install the datapack in `/saves/<world_folder>/datapacks/`.
 - In-game, use `/reload` or `/function #load`; if text appears, the installation is successful.
 - This datapack only supports the Overworld, The Nether, and The End dimensions.
+- When teleporting to a fixed point \(not random or P2P\), entities that are leashed or ridden can also be teleported.
 
 ### Source
 https://github.com/JesKi13567/AboutTeleport

@@ -5,6 +5,13 @@ scoreboard objectives add jkat.facing dummy "玩家朝向-水平"
 scoreboard objectives add jkat.leavegame custom:leave_game "离开服务器"
 scoreboard objectives add jkat.death.imp deathCount "死亡接口"
 scoreboard objectives add jkat.death.record dummy "死亡记录"
+
+scoreboard objectives add jkat.check.move.crouch custom:crouch_one_cm "移动检查-潜行"
+scoreboard objectives add jkat.check.move.walk1 custom:walk_one_cm "移动检查-行走-地面"
+scoreboard objectives add jkat.check.move.walk2 custom:walk_under_water_one_cm "移动检查-行走-水下"
+scoreboard objectives add jkat.check.move.sprint custom:sprint_one_cm "移动检查-疾跑"
+scoreboard objectives add jkat.check.move.swim custom:swim_one_cm "移动检查-游泳"
+scoreboard objectives add jkat.check.move.aviate custom:aviate_one_cm "移动检查-滑行"
 scoreboard objectives add jkat.check.damage.get custom:damage_taken "移动检查-受伤"
 scoreboard objectives add jkat.check.damage.resist custom:damage_resisted "移动检查-受伤抵挡"
 

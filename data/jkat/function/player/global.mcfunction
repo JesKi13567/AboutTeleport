@@ -51,6 +51,12 @@ execute if predicate jkat:action/sneak run function jkat:lift/global
 scoreboard players remove @s[scores={jkat.wait.pearl=1..}] jkat.wait.pearl 1
 
 # 重置移动
+scoreboard players reset @s jkat.check.move.crouch
+scoreboard players reset @s jkat.check.move.walk1
+scoreboard players reset @s jkat.check.move.walk2
+scoreboard players reset @s jkat.check.move.sprint
+scoreboard players reset @s jkat.check.move.swim
+scoreboard players reset @s jkat.check.move.aviate
 scoreboard players reset @s jkat.check.damage.get
 scoreboard players reset @s jkat.check.damage.resist
 
